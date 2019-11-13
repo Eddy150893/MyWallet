@@ -179,3 +179,40 @@ incorporar estilos que se compilaron tambien para el componenten dentro del view
 
 25. Para empaquetar react para produccion 
 npm run production
+
+26. Crear una cuenta en heroku
+
+27. crear archivo Procfile(sin extension) y colocar lo siguiente
+release: bash ./deploy.sh
+web: vendor/bin/heroku-php-apache2 public/
+
+28. crear archivo deploy.sh el cual se encargara de ejecutar los siguiente comandos
+
+# Run Database Migrations
+php artisan migrate:fresh
+
+# Run Seeds
+
+php artisan db:seed
+
+29. crear una aplicacion en heroku
+->click en Create New App
+->Poner un nombre a la aplicacion
+->click en Create app
+Existe tres formas de crear una app en heroku
+-Heroku Git(use Heroku Cli)
+-GitHub(Connect to GitHub)
+-Container Registry(Use Heroky CLI)
+->click en Github
+->click en conectar a Github
+Seguir los pasos de autenticacion
+->Introducimos el nombre de la app(nombre que tiene en github) que queremos deployar 
+->click en search
+->click en connect
+->Activar deployes automaticos
+->elegir la rama que se va a deployar
+->click en deploy branch
+->click en setting
+->click en config vars
+->en key ponemos APP_DEBUG
+->en value ponemos APP_DEBUG=true
