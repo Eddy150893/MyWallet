@@ -216,3 +216,8 @@ Seguir los pasos de autenticacion
 ->click en config vars
 ->en key ponemos APP_DEBUG
 ->en value ponemos APP_DEBUG=true
+->Creamos otra Config Vars
+->en key ponemos APP_KEY
+->en value el APP_KEY que tenga el archivo .env(ejemplo base64:Q9yb8ycffVyKDXN4NCgciM1jDPzFVsKyOaqVSEtOBts=)
+NOTA: de no tener generado un key hacemos lo siguiente
+php artisan key:generate
