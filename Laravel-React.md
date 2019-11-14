@@ -224,3 +224,22 @@ php artisan key:generate
 por cierto el archivo .env no debe ser agregado en el git
 ->cambiamos el apiurl en resources/js/url y la cambiamos por la url que nos proporciono heroku
 en mi caso https://basicwalletapp.herokuapp.com/
+->ejecutamos denuvo
+ npm run production 
+ ->subimos cambiamos a git hub
+ ->luego en heroku en la parte resources debemos buscar
+ mysql
+ y elegimos JawxDB Mysql(elegimos extension gratuita)
+ ->click en Provision
+ (Para el paso anterior debemos de haber tenido
+ configurado la tarjeta de credito)
+ ->click en JawsDB MySQL
+ ->luego en heroku en la parte de config vars
+ configuramos lo siguiente
+ DB_CONNECTION mysql
+ DB_HOST (El que nos provee jaws en el paso anterior)
+ DB_PORT (El que nos provee jaws)
+ DB_NAME (El que nos provee jaws)
+ DB_USERNAME (El que nos provee jaws)
+ DB_PASSWORD (El que nos provee jaws)
+APP_ENV staging
