@@ -238,8 +238,8 @@ en mi caso https://basicwalletapp.herokuapp.com/
  configuramos lo siguiente
  DB_CONNECTION mysql
  DB_HOST (El que nos provee jaws en el paso anterior)
- DB_PORT (El que nos provee jaws)
- DB_NAME (El que nos provee jaws)
- DB_USERNAME (El que nos provee jaws)
- DB_PASSWORD (El que nos provee jaws)
+ DB_PORT (El que nos provee jaws en el paso anterior)
+ DB_DATABASE (El que nos provee jaws en el paso anterior)
+ DB_USERNAME (El que nos provee jaws en el paso anterior)
+ DB_PASSWORD (El que nos provee jaws en el paso anterior)
 APP_ENV staging
