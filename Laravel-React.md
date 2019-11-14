@@ -221,3 +221,6 @@ Seguir los pasos de autenticacion
 ->en value el APP_KEY que tenga el archivo .env(ejemplo base64:Q9yb8ycffVyKDXN4NCgciM1jDPzFVsKyOaqVSEtOBts=)
 NOTA: de no tener generado un key hacemos lo siguiente
 php artisan key:generate
+por cierto el archivo .env no debe ser agregado en el git
+->cambiamos el apiurl en resources/js/url y la cambiamos por la url que nos proporciono heroku
+en mi caso https://basicwalletapp.herokuapp.com/
