@@ -179,3 +179,11 @@ incorporar estilos que se compilaron tambien para el componenten dentro del view
 
 25. Para empaquetar react para produccion 
 npm run production
+
+26. subir la app a github
+
+27. Crear una cuenta en heroku
+
+28. Crear en la carpeta root del proyecto un archivo llamado Procfile (sin ningun tipo de extension) 
+
+29. Crear en la carpeta root del proyecto un archivo llamado deploy.sh
