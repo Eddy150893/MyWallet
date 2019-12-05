@@ -243,3 +243,11 @@ en mi caso https://basicwalletapp.herokuapp.com/
  DB_USERNAME (El que nos provee jaws en el paso anterior)
  DB_PASSWORD (El que nos provee jaws en el paso anterior)
 APP_ENV staging
+
+30. si se quiere tener una rama de desarrollo cuando ya esta deployada esta app
+se debe hacer lo siguiente
+git checkout <el hash del primer commit>
+luego configurar la base de datos en el .env sin olvidar de quitarlo del gitignore y quitarle la extension .example
+luego guardamos los cambios y estaremos en un head del cual puede partir una nueva rama
+git branch dev
+ya creada la rama dev podemos desacernos de los cambios del head y regresar a la rama master o bien dev
